@@ -16,7 +16,7 @@ function classNames(...classes) {
 
 export default function Nav() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-black">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -35,14 +35,14 @@ export default function Nav() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
+                    className="block h-12 w-auto lg:hidden"
+                    src="https://i.imgur.com/137y28d.png"
+                    alt="Baires Pools and Plastering "
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
+                    className="hidden h-12 w-auto lg:block"
+                    src="https://i.imgur.com/137y28d.png"
+                    alt="Baires Pools and Plastering"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -64,16 +64,16 @@ export default function Nav() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                  <button
+                  {/* <button
                   type="button"
                   className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button> 
+                </button>  */}
 
                
-                <Menu as="div" className="relative ml-3">
+                {/* <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="sr-only">Open user menu</span>
@@ -83,8 +83,8 @@ export default function Nav() {
                         alt=""
                       />
                     </Menu.Button>
-                  </div>
-                  <Transition
+                  </div> */}
+                  {/* <Transition
                     as={Fragment}
                     enter="transition ease-out duration-100"
                     enterFrom="transform opacity-0 scale-95"
@@ -125,8 +125,8 @@ export default function Nav() {
                         )}
                       </Menu.Item>
                     </Menu.Items>
-                  </Transition> 
-                </Menu>
+                  </Transition>  */}
+                {/* </Menu> */}
               </div>
             </div>
           </div>
