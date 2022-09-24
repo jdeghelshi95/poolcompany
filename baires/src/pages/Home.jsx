@@ -1,27 +1,34 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { LifebuoyIcon, NewspaperIcon, PhoneIcon, CalculatorIcon, WrenchScrewdriverIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 const supportLinks = [
   {
     name: 'Sales',
-    href: '#',
+    href: 'tel:9082222803',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
+      'Click on this link to contact our sales team',
     icon: PhoneIcon,
   },
   {
-    name: 'Technical Support',
+    name: 'Testimonials',
     href: '#',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: LifebuoyIcon,
+      'Hear from other Customers about their experiance with our work. ',
+    icon: UsersIcon,
   },
   {
-    name: 'Media Inquiries',
+    name: 'Quote Request',
     href: '#',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: NewspaperIcon,
+      'Request a quote from us and we can have one of our sales rep contact you for an appointment to make an estimate on your pool project ',
+    icon: CalculatorIcon,
+  },
+  {
+    name: 'Services',
+    href: '/services',
+    description:
+      'Click this link to get a full list of our offered services.  ',
+    icon: WrenchScrewdriverIcon,
   },
 ]
 
