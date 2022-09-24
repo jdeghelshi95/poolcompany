@@ -1,27 +1,34 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { LifebuoyIcon, NewspaperIcon, PhoneIcon, CalculatorIcon, WrenchScrewdriverIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 const supportLinks = [
   {
     name: 'Sales',
-    href: '#',
+    href: 'tel:9082222803',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
+      'Click on this link to contact our sales team',
     icon: PhoneIcon,
   },
   {
-    name: 'Technical Support',
+    name: 'Testimonials',
     href: '#',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: LifebuoyIcon,
+      'Hear from other Customers about their experiance with our work. ',
+    icon: UsersIcon,
   },
   {
-    name: 'Media Inquiries',
+    name: 'Quote Request',
     href: '#',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: NewspaperIcon,
+      'Request a quote from us and we can have one of our sales rep contact you for an appointment to make an estimate on your pool project ',
+    icon: CalculatorIcon,
+  },
+  {
+    name: 'Services',
+    href: '/services',
+    description:
+      'Click this link to get a full list of our offered services.  ',
+    icon: WrenchScrewdriverIcon,
   },
 ]
 
@@ -34,13 +41,13 @@ export default function Example() {
           <img
             className="h-full w-full object-cover"
             src="https://media4.giphy.com/media/9ETKV1mmCFYqxQ1UXA/giphy.gif?cid=790b76118bbfc4108027a12f126682eb5afa6a67adbfed27&rid=giphy.gif&ct=g"
-            alt=""
+            alt="https://i.imgur.com/2XwvFTv.jpg"
           />
           <div className="absolute inset-0 bg-blue-400 mix-blend-multiply" aria-hidden="true" />
         </div>
         <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">Baires Pools and Plastering </h1>
-          <p className="mt-6 max-w-3xl text-xl text-gray-300">
+          <p className="mt-6 max-w-3xl text-xl text-center items-center text-gray-300">
             Pool plastering with the amazing finishes of Pebbletec that look and feel like nothing else on the market. 
           </p>
         </div>
