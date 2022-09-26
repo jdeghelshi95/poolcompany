@@ -17,13 +17,6 @@ const supportLinks = [
     icon: UsersIcon,
   },
   {
-    name: 'Quote Request',
-    href: '#',
-    description:
-      'Request a quote from us and we can have one of our sales rep contact you for an appointment to make an estimate on your pool project ',
-    icon: CalculatorIcon,
-  },
-  {
     name: 'Services',
     href: '/services',
     description:
@@ -40,8 +33,9 @@ export default function Example() {
         <div className="absolute inset-0">
           <img
             className="h-full w-full object-cover"
-            src="https://media4.giphy.com/media/9ETKV1mmCFYqxQ1UXA/giphy.gif?cid=790b76118bbfc4108027a12f126682eb5afa6a67adbfed27&rid=giphy.gif&ct=g"
-            alt="https://i.imgur.com/2XwvFTv.jpg"
+            alt="https://media4.giphy.com/media/9ETKV1mmCFYqxQ1UXA/giphy.gif?cid=790b76118bbfc4108027a12f126682eb5afa6a67adbfed27&rid=giphy.gif&ct=g"
+            
+            src="https://i.imgur.com/2XwvFTv.jpg"
           />
           <div className="absolute inset-0 bg-blue-400 mix-blend-multiply" aria-hidden="true" />
         </div>
