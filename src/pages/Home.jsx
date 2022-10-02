@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { LifebuoyIcon, NewspaperIcon, PhoneIcon, CalculatorIcon, WrenchScrewdriverIcon, UsersIcon } from '@heroicons/react/24/outline'
+import { PhoneIcon, WrenchScrewdriverIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 const supportLinks = [
   {
@@ -33,7 +33,7 @@ export default function Example() {
         <div className="absolute inset-0">
           <img
             className="h-full w-full object-cover"
-            alt="https://media4.giphy.com/media/9ETKV1mmCFYqxQ1UXA/giphy.gif?cid=790b76118bbfc4108027a12f126682eb5afa6a67adbfed27&rid=giphy.gif&ct=g"
+            alt="https://i.imgur.com/2XwvFTv.jpg"
             
             src="https://i.imgur.com/2XwvFTv.jpg"
           />
