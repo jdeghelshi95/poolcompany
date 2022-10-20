@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Testimonials from '../components/Testimonials'
 import { PhoneIcon, WrenchScrewdriverIcon, UsersIcon } from '@heroicons/react/24/outline'
-
+import Team from '../components/Team'
 const supportLinks = [
   {
     name: 'Sales',
@@ -46,9 +46,11 @@ export default function Home() {
         </div>
         <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">Baires Pools and Plastering </h1>
-          <p className="mt-6 max-w-3xl text-xl text-center items-center text-gray-300">
+          <div className='flex justify-center'>          
+          <p className="mt-6 max-w-3xl text-xl  text-gray-300">
             Pool plastering with the amazing finishes of Pebbletec that look and feel like nothing else on the market. 
           </p>
+          </div>       
         </div>
       </div>
 
@@ -83,6 +85,7 @@ export default function Home() {
         </div>
       </section>
       <section>
+<Team/>
 <Testimonials/>
         
       </section>

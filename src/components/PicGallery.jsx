@@ -1,8 +1,6 @@
 import React from 'react'
 
-const PicGallery
-
-= () => {
+const PicGallery = () => {
   return (
     <div>
     <section class="overflow-hidden text-gray-700">
