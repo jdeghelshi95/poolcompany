@@ -38,10 +38,11 @@ export default function Home() {
         <div className="absolute inset-0">
           <img
             className="h-full w-full object-cover"
-            alt="https://i.imgur.com/2XwvFTv.jpg"
+            alt="couple swimming in pool "
             
             src="https://i.imgur.com/2XwvFTv.jpg"
           />
+     
           <div className="absolute inset-0 bg-blue-400 mix-blend-multiply" aria-hidden="true" />
         </div>
         <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
