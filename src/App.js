@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer"
+import LostPage from "./pages/LostPage"
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path="/pics" element={<Gallery/>}/>
       <Route path="/contact" element={<Contact/>}/>
+      <Route path ="*" element={<LostPage/>}/>
       </Routes>
       <Footer/>
     </div>

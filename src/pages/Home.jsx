@@ -1,4 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
+import Testimonials from '../components/Testimonials'
 import { PhoneIcon, WrenchScrewdriverIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 const supportLinks = [
@@ -8,24 +9,28 @@ const supportLinks = [
     description:
       'Click on this link to contact our sales team',
     icon: PhoneIcon,
+    buttonName: "Contact Us"
   },
-  {
-    name: 'Testimonials',
-    href: '#',
-    description:
-      'Hear from other Customers about their experiance with our work. ',
-    icon: UsersIcon,
-  },
+
   {
     name: 'Services',
-    href: '/services',
+    href: 'https://pebbletec.com/products/pool-finishes/',
     description:
       'Click this link to get a full list of our offered services.  ',
     icon: WrenchScrewdriverIcon,
+    buttonName: 'Services'
+  },
+  {
+    name: 'Gallery',
+    href: '/pics',
+    description:
+      'See our completed projects with other pebbletec clients.  ',
+    icon: WrenchScrewdriverIcon,
+    buttonName: 'Gallery'
   },
 ]
 
-export default function Example() {
+export default function Home() {
   return (
     <div className="bg-white">
       {/* Header */}
@@ -58,7 +63,7 @@ export default function Example() {
           Contact us
           </a>
         </h2>
-        <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+        <div className="grid grid-cols-2 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
           {supportLinks.map((link) => (
             <div key={link.name} className="flex flex-col rounded-2xl bg-white shadow-xl">
               <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
@@ -70,12 +75,16 @@ export default function Example() {
               </div>
               <div className="rounded-bl-2xl rounded-br-2xl bg-gray-50 p-6 md:px-8">
                 <a href={link.href} className="text-base font-medium text-indigo-700 hover:text-indigo-600">
-                  Contact us<span aria-hidden="true"> &rarr;</span>
+                  {link.buttonName}<span aria-hidden="true"> &rarr;</span>
                 </a>
               </div>
             </div>
           ))}
         </div>
+      </section>
+      <section>
+<Testimonials/>
+        
       </section>
     </div>
   )

@@ -14,7 +14,7 @@
 */
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
-export default function Example() {
+export default function Form() {
   return (
     <div className="relative bg-white">
       <div className="absolute inset-0">
