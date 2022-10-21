@@ -28,14 +28,14 @@ const people = [
         emailto: '',
     },
     {
-        name: 'David Eghelshi',
-        role: 'Owner',
+        name: 'Junior Baires',
+        role: 'Sales Manager',
         imageUrl: '',
         emailto: 'eghelshi@gmail.com',
     },
     {
-        name: 'David Eghelshi',
-        role: 'Owner',
+        name: 'David Eghelshi Jr',
+        role: 'Sales Manager',
         imageUrl: '',
         emtail: '',
     },

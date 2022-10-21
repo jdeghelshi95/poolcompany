@@ -2,6 +2,7 @@
 import Testimonials from '../components/Testimonials'
 import { PhoneIcon, WrenchScrewdriverIcon, UsersIcon } from '@heroicons/react/24/outline'
 import Team from '../components/Team'
+import Gallery from '../components/Gallery'
 const supportLinks = [
   {
     name: 'Sales',
@@ -88,10 +89,14 @@ export default function Home() {
         </div>
       </section>
       <section>
+
 <Team/>
-<Testimonials/>
+{/* <Testimonials/> */}
+<div className='flex justify-center'>
+<Gallery/>  
+</div>
         
-      </section>
+    </section>
     </div>
   )
 }
