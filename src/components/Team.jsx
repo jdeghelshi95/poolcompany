@@ -17,7 +17,7 @@ const people = [
       name: 'David Eghelshi',
       role: 'Owner',
       imageUrl:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.97JxqSdEyEMer94aCTCEzQHaEK%26pid%3DApi&f=1&ipt=999b3f8e5e5a86446fb5da83b17b650847724982c86ecfac24bcedbd8afe27bb&ipo=images',
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -26,6 +26,18 @@ const people = [
         role: 'Owner',
         imageUrl: '',
         emailto: '',
+    },
+    {
+        name: 'David Eghelshi',
+        role: 'Owner',
+        imageUrl: '',
+        emailto: 'eghelshi@gmail.com',
+    },
+    {
+        name: 'David Eghelshi',
+        role: 'Owner',
+        imageUrl: '',
+        emtail: '',
     },
     
     // More people...
