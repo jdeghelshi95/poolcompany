@@ -1,7 +1,7 @@
 import {
   PhoneIcon,
   WrenchScrewdriverIcon,
-  UsersIcon,
+  PhotoIcon,
 } from "@heroicons/react/24/outline";
 
 const supportLinks = [
@@ -25,7 +25,7 @@ const supportLinks = [
     name: "Gallery",
     href: "/pics",
     description: "See our completed projects with other pebbletec clients.  ",
-    icon: WrenchScrewdriverIcon,
+    icon: PhotoIcon,
     buttonName: "Gallery",
   },
 ];
