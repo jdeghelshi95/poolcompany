@@ -1,87 +1,66 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
 const people = [
     {
       name: 'David Eghelshi',
       role: 'Owner',
       imageUrl:
-        'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.97JxqSdEyEMer94aCTCEzQHaEK%26pid%3DApi&f=1&ipt=999b3f8e5e5a86446fb5da83b17b650847724982c86ecfac24bcedbd8afe27bb&ipo=images',
+        'https://i.imgur.com/TVthI7l.jpg',
       twitterUrl: '#',
       linkedinUrl: '#',
     },
     {
-        name: 'Remberto Baires',
-        role: 'Owner',
-        imageUrl: '',
-        emailto: '',
-    },
-    {
-        name: 'Junior Baires',
-        role: 'Sales Manager',
-        imageUrl: '',
-        emailto: 'eghelshi@gmail.com',
-    },
-    {
-        name: 'David Eghelshi Jr',
-        role: 'Sales Manager',
-        imageUrl: '',
-        emtail: '',
-    },
-    
-    // More people...
+    name: 'Remberto Baires',
+    role: 'Owner',
+    imageUrl:
+      'https://i.imgur.com/xxiHPzV.jpg',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+  {
+    name: 'Junior Baires',
+    role: 'Sales Manager',
+    imageUrl:
+      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+  {
+    name: 'David Eghelshi Jr',
+    role: 'Sales Manager',
+    imageUrl:
+      'https://i.imgur.com/pXWQQhp.jpg',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+
   ]
   
-  export default function Team () {
+  export default function Team() {
     return (
-      <div className="bg-white">
+      <div className="bg-gray-900">
         <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12">
             <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Our Team</h2>
-              <p className="text-xl text-gray-500">
-                Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor ultricies donec risus sodales. Tempus
-                quis et.
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Meet our team</h2>
+              <p className="text-xl text-gray-300">
+                We truly care about your project and want you to have the best Pool finish with customer service feel free to reach out to any members of our team. 
               </p>
             </div>
-            <ul
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
-            >
+            <ul role="list" className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
               {people.map((person) => (
-                <li key={person.name}>
-                  <div className="space-y-4">
-                    <div className="aspect-w-3 aspect-h-2">
-                      <img className="rounded-lg object-cover shadow-lg" src={person.imageUrl} alt="" />
-                    </div>
-  
-                    <div className="space-y-2">
+                <li key={person.name} className="rounded-lg bg-gray-800 py-10 px-6 text-center xl:px-10 xl:text-left">
+                  <div className="space-y-6 xl:space-y-10">
+                    <img className="mx-auto h-40 w-40 rounded-full xl:h-1/4 xl:w-1/2" src={person.imageUrl} alt="" />
+                    <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                       <div className="space-y-1 text-lg font-medium leading-6">
-                        <h3>{person.name}</h3>
-                        <p className="text-indigo-600">{person.role}</p>
+                        <h3 className="text-white">{person.name}</h3>
+                        <p className="text-indigo-400">{person.role}</p>
                       </div>
-                      <ul  className="flex space-x-5">
+  
+                      <ul role="list" className="flex justify-center space-x-5">
+                    
                         <li>
-                          <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
-                            <span className="sr-only">Twitter</span>
-                            <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                              <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                            </svg>
-                          </a>
-                        </li>
-                        <li>
-                          <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
-                            <span className="sr-only">LinkedIn</span>
+                          <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-300">
+                            <span className="sr-only">Email</span>
                             <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                               <path
                                 fillRule="evenodd"
