@@ -40,7 +40,6 @@ export default function Home() {
           <img
             className="h-full w-full object-cover"
             alt="couple swimming in pool "
-            
             src="https://i.imgur.com/2XwvFTv.jpg"
           />
      
