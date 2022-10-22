@@ -42,7 +42,7 @@ export default function Example() {
             alt=""
           />
           <div
-            className="absolute inset-0 bg-blue-500 bg-opacity-30"
+            className="absolute inset-0 bg-gray-700 bg-opacity-50"
             aria-hidden="true"
           />
         </div>
