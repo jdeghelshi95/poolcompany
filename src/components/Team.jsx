@@ -7,30 +7,33 @@ const people = [
     role: "Owner",
     imageUrl: "https://i.imgur.com/TVthI7l.jpg",
     EmailUrl: "#",
-    Phone: "908-787-2210",
+    href: "tel:9087872210",
+    email: "mailto:david@bairespoolsplastering.com"
   },
   {
     name: "Remberto Baires",
     role: "Owner",
     imageUrl: "https://i.imgur.com/xxiHPzV.jpg",
-    Email: "#",
-    linkedinUrl: "#",
+    href: "tel:9087212464",
+    email: "mailto:remberto@bairespoolsplastering.com"
   },
   {
     name: "Junior Baires",
     role: "Sales Manager",
     imageUrl:
       "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
+    href: "tel:9087872210",
+    email: "mailto:info@bairespoolsplastering.com"
+
+    },
   {
     name: "David Eghelshi Jr",
     role: "Sales Manager",
     imageUrl: "https://i.imgur.com/pXWQQhp.jpg",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
+    href: "tel:9089178750",
+    email: "mailto:eghelshi@gmail.com"
+
+},
 ];
 
 export default function Team() {
@@ -70,7 +73,7 @@ export default function Team() {
                       {/* Phone Icon Section */}
                       <li>
                         <a
-                          href={person.linkedinUrl}
+                          href={person.href}
                           className="text-gray-400 hover:text-gray-300"
                         >
                           <span className="sr-only">Phone</span>
@@ -82,7 +85,7 @@ export default function Team() {
                       {/* Email Icon Section  */}
                       <li>
                         <a
-                          href={person.linkedinUrl}
+                          href={person.email}
                           className="text-gray-400 hover:text-gray-300"
                         >
                           <span className="sr-only">Email</span>

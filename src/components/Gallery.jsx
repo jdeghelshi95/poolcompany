@@ -23,7 +23,7 @@ const Gallery = () => {
 
 
   return (
-    <div className='w-7/12'>
+    <div className='w-6/12'>
         <ImageGallery items={images} />
     </div>
   )
