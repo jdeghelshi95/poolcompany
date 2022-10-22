@@ -90,11 +90,11 @@ export default function Home() {
       </section>
       <section>
 
-<Team/>
-{/* <Testimonials/> */}
 <div className='flex justify-center'>
 <Gallery/>  
 </div>
+<Team/>
+{/* <Testimonials/> */}
         
     </section>
     </div>
