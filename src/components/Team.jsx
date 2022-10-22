@@ -59,7 +59,7 @@ export default function Team() {
               >
                 <div className="space-y-6 xl:space-y-10">
                   <img
-                    className="mx-auto h-50 w-40 rounded-full xl:h-1/4 xl:w-1/2"
+                    className="mx-auto sm:h-50 sm:w-40 rounded-full xl:h-1/4 xl:w-1/2"
                     src={person.imageUrl}
                     alt=""
                   />
