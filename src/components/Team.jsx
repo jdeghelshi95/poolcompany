@@ -18,20 +18,19 @@ const people = [
     email: "mailto:remberto@bairespoolsplastering.com"
   },
   {
-    name: "Junior Baires",
-    role: "Sales Manager",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-    href: "tel:9087872210",
-    email: "mailto:info@bairespoolsplastering.com"
-
-    },
-  {
     name: "David Eghelshi Jr",
     role: "Sales Manager",
     imageUrl: "https://i.imgur.com/pXWQQhp.jpg",
     href: "tel:9089178750",
     email: "mailto:eghelshi@gmail.com"
+
+},
+{
+  name: "Xiomara Baires",
+  role: "Service Manager",
+  imageUrl: "https://i.imgur.com/pXWQQhp.jpg",
+  href: "tel:+1 908 738 9077",
+  email: "mailto:eghelshi@gmail.com"
 
 },
 ];
