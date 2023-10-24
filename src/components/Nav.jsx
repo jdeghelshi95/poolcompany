@@ -7,7 +7,6 @@ const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Contact', href: '/contact', current: false },
   { name: 'Gallery', href: '/pics', current: false },
-  { name: 'PebbleTec', href: 'https://pebbletec.com/products/pool-finishes/', current: false },
 ]
 
 function classNames(...classes) {
