@@ -4,10 +4,10 @@ const navigation = {
     { name: "Home", href: "/" },
     { name: "Contact", href: "/contact" },
     { name: "Gallery", href: "/pics" },
-    {
-      name: "PebbleTec",
-      href: "https://pebbletec.com/products/pool-finishes/",
-    },
+    // {
+    //   name: "PebbleTec",
+    //   href: "https://pebbletec.com/products/pool-finishes/",
+    // },
   ],
   social: [
     {

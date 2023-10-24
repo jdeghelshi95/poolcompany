@@ -54,8 +54,8 @@ export default function Example() {
             <div className="flex justify-center">
 
             <p className="mt-6 max-w-3xl text-xl  text-gray-300">
-              Pool plastering with the amazing finishes of Pebbletec that look
-              and feel like nothing else on the market.
+              Pool plastering with the amazing finishes that look
+              and feel like nothing else on the market. 
             </p>
             </div>
           </div>
