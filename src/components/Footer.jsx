@@ -4,6 +4,7 @@ const navigation = {
     { name: "Home", href: "/" },
     { name: "Contact", href: "/contact" },
     { name: "Gallery", href: "/pics" },
+    { name: "WetEdge", href: "https://wetedgetechnologies.com/"}
     // {
     //   name: "PebbleTec",
     //   href: "https://pebbletec.com/products/pool-finishes/",

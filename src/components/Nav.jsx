@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Contact', href: '/contact', current: false },
   { name: 'Gallery', href: '/pics', current: false },
+  { name: "WetEdge", href: "https://wetedgetechnologies.com/", current: false}
 ]
 
 function classNames(...classes) {
