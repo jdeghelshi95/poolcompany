@@ -15,7 +15,7 @@ const supportLinks = [
 
   {
     name: "Services",
-    href: "https://pebbletec.com/products/pool-finishes/",
+    href: "https://cdn.flipsnack.com/widget/v2/widget.html?hash=1u3q1zxwb1",
     description:
       "Click this link to get a full list of our offered services.  ",
     icon: WrenchScrewdriverIcon,
