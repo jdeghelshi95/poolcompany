@@ -89,7 +89,7 @@ export default function Example() {
       <div className="flex place-items-center  w-full 
        ">
        
-        <div className=" w-full">            
+        <div className=" p-8 w-full">            
         <Form/>
        
         </div>
