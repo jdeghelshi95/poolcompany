@@ -26,6 +26,10 @@ const NewGallery = () => {
       imgelink:
         "https://i.imgur.com/Qce8IsJ.jpeg",
     },
+    {
+      imgelink:
+        "https://i.imgur.com/f8ZKqGk.jpeg",
+    },
   
   ];
 
@@ -43,7 +47,7 @@ const NewGallery = () => {
         />
       </div>
 
-      <div className=" grid flex flex-row grid-cols-5 w-  gap-6">
+      <div className=" grid flex flex-row grid-cols-4   gap-6">
         {data.map(({ imgelink }, index) => (
           <div key={index}>
             <img
