@@ -13,26 +13,26 @@ const people = [
   {
     name: "Remberto Baires",
     role: "Owner",
-    imageUrl: "https://i.imgur.com/xxiHPzV.jpg",
+    imageUrl: "https://i.imgur.com/jeKU9g7.jpeg",
     href: "tel:9087212464",
     email: "mailto:remberto@bairespoolsplastering.com"
   },
-  {
-    name: "David Eghelshi Jr",
-    role: "Sales Manager",
-    imageUrl: "https://i.imgur.com/pXWQQhp.jpg",
-    href: "tel:9089178750",
-    email: "mailto:eghelshi@gmail.com"
+//   {
+//     name: "David Eghelshi Jr",
+//     role: "Sales Manager",
+//     imageUrl: "https://i.imgur.com/pXWQQhp.jpg",
+//     href: "tel:9089178750",
+//     email: "mailto:eghelshi@gmail.com"
 
-},
-{
-  name: "Xiomara Baires",
-  role: "Service Manager",
-  imageUrl: "https://i.imgur.com/pXWQQhp.jpg",
-  href: "tel:+1 908 738 9077",
-  email: "mailto:eghelshi@gmail.com"
+// },
+// {
+//   name: "Xiomara Baires",
+//   role: "Service Manager",
+//   imageUrl: "https://i.imgur.com/pXWQQhp.jpg",
+//   href: "tel:+1 908 738 9077",
+//   email: "mailto:eghelshi@gmail.com"
 
-},
+// },
 ];
 
 export default function Team() {
