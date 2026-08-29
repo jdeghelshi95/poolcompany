@@ -14,28 +14,33 @@ const data = [
 ];
 
 const NewGallery = () => {
-  const [active, setActive] = React.useState(data[0].imgelink);
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const active = data[activeIndex];
 
   return (
-    <div className="grid gap-4">
-      <div>
+    <div>
+      <div className="relative rounded-xl overflow-hidden border border-white/10">
         <img
-          className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
-          src={active}
-          alt="Baires Pools and Plastering project"
+          className="h-auto w-full max-w-full object-cover md:h-[520px]"
+          src={active.imgelink}
+          alt={active.label}
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent pointer-events-none" />
+        <span className="absolute bottom-5 left-6 text-white font-bold text-lg">{active.label}</span>
       </div>
 
-      <div className="grid flex flex-row grid-cols-5 gap-6">
+      <div className="grid grid-cols-3 sm:grid-cols-5 gap-3 mt-4">
         {data.map(({ imgelink, label }, index) => (
-          <div key={index}>
-            <img
-              onClick={() => setActive(imgelink)}
-              src={imgelink}
-              className="object-cover object-center h-20 max-w-full rounded-lg cursor-pointer"
-              alt={label}
-            />
-          </div>
+          <button
+            key={label}
+            onClick={() => setActiveIndex(index)}
+            className={`relative rounded-lg overflow-hidden aspect-square focus:outline-none ring-2 transition-colors ${
+              index === activeIndex ? "ring-[#33C2F0]" : "ring-transparent hover:ring-white/30"
+            }`}
+          >
+            <img src={imgelink} className="w-full h-full object-cover" alt={label} />
+            {index !== activeIndex && <div className="absolute inset-0 bg-black/25" />}
+          </button>
         ))}
       </div>
     </div>

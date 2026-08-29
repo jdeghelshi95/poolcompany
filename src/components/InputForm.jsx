@@ -6,6 +6,11 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 
+const fieldBase =
+  "w-full px-4 py-3 border-2 bg-[#14171D] text-white placeholder:text-white/40 rounded-md outline-none focus:ring-4";
+const fieldOk = "border-white/15 focus:border-[#33C2F0] ring-transparent";
+const fieldError = "border-red-500 focus:border-red-500 ring-red-500/10";
+
 export default function Contact() {
   const {
     register,
@@ -53,18 +58,14 @@ export default function Contact() {
             type="text"
             placeholder="Full Name"
             autoComplete="false"
-            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
-              errors.name
-                ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
-                : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-            }`}
+            className={`${fieldBase} ${errors.name ? fieldError : fieldOk}`}
             {...register("name", {
               required: "Full name is required",
               maxLength: 80,
             })}
           />
           {errors.name && (
-            <div className="mt-1 text-red-600">
+            <div className="mt-1 text-red-400">
               <small>{errors.name.message}</small>
             </div>
           )}
@@ -79,21 +80,17 @@ export default function Contact() {
             placeholder="Phone Number"
             name="phone"
             autoComplete="false"
-            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
-              errors.phone
-                ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
-                : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-            }`}
+            className={`${fieldBase} ${errors.phone ? fieldError : fieldOk}`}
             {...register("phone", {
               required: "Enter your Phone",
               pattern: {
-                
+
                 message: "Please enter a valid Phone number",
               },
             })}
           />
           {errors.phone && (
-            <div className="mt-1 text-red-600">
+            <div className="mt-1 text-red-400">
               <small>{errors.phone.message}</small>
             </div>
           )}
@@ -109,11 +106,7 @@ export default function Contact() {
             placeholder="Email Address"
             name="email"
             autoComplete="false"
-            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${
-              errors.email
-                ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
-                : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-            }`}
+            className={`${fieldBase} ${errors.email ? fieldError : fieldOk}`}
             {...register("email", {
               required: "Enter your email",
               pattern: {
@@ -123,7 +116,7 @@ export default function Contact() {
             })}
           />
           {errors.email && (
-            <div className="mt-1 text-red-600">
+            <div className="mt-1 text-red-400">
               <small>{errors.email.message}</small>
             </div>
           )}
@@ -133,17 +126,13 @@ export default function Contact() {
           <textarea
             name="message"
             placeholder="Your Message"
-            className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${
-              errors.message
-                ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
-                : "border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
-            }`}
+            className={`${fieldBase} h-36 ${errors.message ? fieldError : fieldOk}`}
             {...register("message", {
               required: "Enter your Message",
             })}
           />
           {errors.message && (
-            <div className="mt-1 text-red-600">
+            <div className="mt-1 text-red-400">
               {" "}
               <small>{errors.message.message}</small>
             </div>
@@ -152,10 +141,10 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="w-full py-4 font-semibold text-white transition-colors bg-cyan-600 rounded-md hover:bg-cyan-600 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black ">
+          className="w-full py-4 font-semibold text-[#0A0C10] transition-colors bg-[#33C2F0] rounded-md hover:bg-[#6FDBFF] focus:outline-none focus:ring-4 focus:ring-[#33C2F0]/20 px-7">
           {isSubmitting ? (
             <svg
-              className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
+              className="w-5 h-5 mx-auto text-[#0A0C10] animate-spin"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24">
@@ -178,12 +167,12 @@ export default function Contact() {
       </form>
 
       {isSubmitSuccessful && isSuccess && (
-        <div className="mt-3 text-sm text-center text-green-500">
+        <div className="mt-3 text-sm text-center text-green-400">
           {message || "Success. Message sent successfully"}
         </div>
       )}
       {isSubmitSuccessful && !isSuccess && (
-        <div className="mt-3 text-sm text-center text-red-500">
+        <div className="mt-3 text-sm text-center text-red-400">
           {message || "Something went wrong. Please try later."}
         </div>
       )}
