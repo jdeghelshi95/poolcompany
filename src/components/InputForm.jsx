@@ -2,7 +2,7 @@
 
 // This example uses `@web3forms/react` plugin and tailwindcss for css styling
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 
@@ -11,9 +11,6 @@ export default function Contact() {
     register,
     handleSubmit,
     reset,
-    watch,
-    control,
-    setValue,
     formState: { errors, isSubmitSuccessful, isSubmitting },
   } = useForm({
     mode: "onTouched",

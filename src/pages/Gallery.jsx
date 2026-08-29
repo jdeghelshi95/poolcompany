@@ -1,5 +1,4 @@
 import React from 'react'
-import PicGallery from '../components/PicGallery'
 import NewGall from "../components/NewGallery.jsx"
 
 const Gallery = () => {
@@ -9,7 +8,6 @@ const Gallery = () => {
     <div className='w-1/2'>
       <NewGall/>
     </div>
-    {/* <PicGallery/> */}
     </div>
     </div>
   )

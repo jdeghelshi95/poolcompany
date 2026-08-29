@@ -1,30 +1,17 @@
-// import Testimonials from "../components/Testimonials";
-import Team from "../components/Team";
-import Gallery from "../components/Gallery";
 import Header from "../components/Header";
-
+import ServicesSection from "../components/ServicesSection";
+import WorkShowcase from "../components/WorkShowcase";
+import Team from "../components/Team";
+import CTABand from "../components/CTABand";
 
 export default function Home() {
   return (
-
-    <div classname="bg-white">
-        <section>
-          <Header/>
-        </section>
-
-
-      <section>
-        {/* gallery section */}
-        <div className="flex justify-center">
-          <Gallery />
-        </div>
-        
-        {/* team section */}
-        <section>
-        <Team />
-        </section>
-        {/* <Testimonials/> */}
-      </section>
+    <div className="bg-[#0A0C10]">
+      <Header />
+      <ServicesSection />
+      <WorkShowcase />
+      <Team />
+      <CTABand />
     </div>
   );
 }

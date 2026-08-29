@@ -1,14 +1,11 @@
-/* This example requires Tailwind CSS v2.0+ */
+import logo from "../assets/site/logo.png";
+
 const navigation = {
   main: [
     { name: "Home", href: "/" },
-    { name: "Contact", href: "/contact" },
     { name: "Gallery", href: "/pics" },
-    { name: "WetEdge", href: "https://wetedgetechnologies.com/"}
-    // {
-    //   name: "PebbleTec",
-    //   href: "https://pebbletec.com/products/pool-finishes/",
-    // },
+    { name: "Contact", href: "/contact" },
+    { name: "WetEdge", href: "https://wetedgetechnologies.com/" },
   ],
   social: [
     {
@@ -42,38 +39,27 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
-      <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
-        <nav
-          className="-mx-5 -my-2 flex flex-wrap justify-center"
-          aria-label="Footer"
-        >
-          {navigation.main.map((item) => (
-            <div key={item.name} className="px-5 py-2">
-              <a
-                href={item.href}
-                className="text-base text-gray-500 hover:text-gray-900"
-              >
+    <footer className="bg-[#0A0C10] border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-6 md:px-8 py-9">
+        <div className="flex items-center justify-between flex-wrap gap-6">
+          <img src={logo} alt="Baires Pools and Plastering" className="h-7 w-auto opacity-85" />
+          <nav className="flex flex-wrap gap-6" aria-label="Footer">
+            {navigation.main.map((item) => (
+              <a key={item.name} href={item.href} className="text-white/50 hover:text-white text-sm">
                 {item.name}
               </a>
-            </div>
-          ))}
-        </nav>
-        <div className="mt-8 flex justify-center space-x-6">
-          {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-gray-400 hover:text-gray-500"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
+            ))}
+          </nav>
+          <div className="flex gap-4">
+            {navigation.social.map((item) => (
+              <a key={item.name} href={item.href} className="text-white/40 hover:text-white/70">
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-[18px] w-[18px]" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
         </div>
-        <p className="mt-8 text-center text-base text-gray-400">
-          &copy;2022 Graceful Designs, Inc. All rights reserved.
-        </p>
+        <p className="mt-6 text-white/30 text-xs">&copy; Baires Pools and Plastering. All rights reserved.</p>
       </div>
     </footer>
   );
